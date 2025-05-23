@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAILY PLANNER</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="planner-container">
+    <h1 class="title">DAY PLANNER</h1>
+
+    <div class="section flex">
+      <div class="box">
+        <h3>Date</h3>
+        <input type="date">
+      </div>
+      <div class="box">
+        <h3>Must-Dos</h3>
+        <div class="editable-list" id="mustDos">
+          <div><input type="checkbox" class="checkbox"><input type="text" placeholder="What's your plan..."></div>
+        </div>
+        <button class="add-btn" onclick="addLine('mustDos')">+</button>
+      </div>
+      <div class="box">
+        <h3>Shopping List</h3>
+        <div class="editable-list" id="shoppingList">
+          <div><input type="checkbox" class="checkbox"><input type="text" placeholder="What's your plan..."></div>
+        </div>
+        <button class="add-btn" onclick="addLine('shoppingList')">+</button>
+      </div>
+    </div>
+
+    <div class="section box">
+      <h3>My Schedule</h3>
+      <div class="editable-list" id="schedule">
+        <div><input type="checkbox" class="checkbox"><span class="label-left">8:00 AM</span><input type="text" placeholder="What's your plan..."></div>
+        <div><input type="checkbox" class="checkbox"><span class="label-left">9:00 AM</span><input type="text" placeholder="What's your plan..."></div>
+        <div><input type="checkbox" class="checkbox"><span class="label-left">10:00 AM</span><input type="text" placeholder="What's your plan..."></div>
+        <div><input type="checkbox" class="checkbox"><span class="label-left">11:00 AM</span><input type="text" placeholder="What's your plan..."></div>
+        <div><input type="checkbox" class="checkbox"><span class="label-left">12:00 PM</span><input type="text" placeholder="What's your plan..."></div>
+        <div><input type="checkbox" class="checkbox"><span class="label-left">1:00 PM</span><input type="text" placeholder="What's your plan..."></div>
+        <div><input type="checkbox" class="checkbox"><span class="label-left">2:00 PM</span><input type="text" placeholder="What's your plan..."></div>
+        <div><input type="checkbox" class="checkbox"><span class="label-left">3:00 PM</span><input type="text" placeholder="What's your plan..."></div>
+        <div><input type="checkbox" class="checkbox"><span class="label-left">4:00 PM</span><input type="text" placeholder="What's your plan..."></div>
+        <div><input type="checkbox" class="checkbox"><span class="label-left">5:00 PM</span><input type="text" placeholder="What's your plan..."></div>
+        <div><input type="checkbox" class="checkbox"><span class="label-left">6:00 PM</span><input type="text" placeholder="What's your plan..."></div>
+        <div><input type="checkbox" class="checkbox"><span class="label-left">7:00 PM</span><input type="text" placeholder="What's your plan..."></div>
+      </div>
+    </div>
+
+    <div class="section flex">
+      <div class="box">
+        <h3>Meal Plan</h3>
+        <div class="editable-list">
+          <div><input type="checkbox" class="checkbox"><span class="label-left">Breakfast</span><input type="text" placeholder="Plan your Healthy Diet"></div>
+          <div><input type="checkbox" class="checkbox"><span class="label-left">Lunch</span><input type="text" placeholder="Plan your Healthy Diet"></div>
+          <div><input type="checkbox" class="checkbox"><span class="label-left">Dinner</span><input type="text" placeholder="Plan your Healthy Diet"></div>
+        </div>
+      </div>
+      <div class="box">
+        <h3>Water</h3>
+        <div class="water-tracker" id="waterTracker">
+          <div class="bottle"></div>
+          <div class="bottle"></div>
+          <div class="bottle"></div>
+          <div class="bottle"></div>
+          <div class="bottle"></div>
+          <div class="bottle"></div>
+          <div class="bottle"></div>
+          <div class="bottle"></div>
+        </div>
+      </div>
+      <div class="box">
+        <h3>Exercise</h3>
+        <div><input type="checkbox" class="checkbox"><textarea rows="4" placeholder="Log your workout..."></textarea></div>
+      </div>
+      <div class="box">
+        <h3>Medicines</h3>
+        <div class="meds">
+          <div><input type="checkbox"> AM</div>
+          <div><input type="checkbox"> PM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
